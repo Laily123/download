@@ -4,9 +4,12 @@ import com.download.service.UserService;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.ModelMap;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.servlet.ModelAndView;
+
 import javax.annotation.Resource;
 
 /**
+ * 正常页面路由
  * Created by hxy on 16/4/30.
  */
 
@@ -19,17 +22,21 @@ public class HomePage {
     UserService userService;
 
     @RequestMapping("")
-    public String rootIndex(ModelMap map) {
-        map.addAttribute("test","index");
-        System.out.println( userService.countUser() );
-        return "index";
+    public ModelAndView rootIndex() {
+        ModelAndView modelAndView = new ModelAndView();
+        modelAndView.addObject("test", "index");
+        System.out.println(userService.countUser());
+        modelAndView.setViewName("index");
+        return modelAndView;
     }
 
     @RequestMapping("index")
-    public String index(ModelMap map) {
-        map.addAttribute("test", "index");
+    public ModelAndView index() {
+        ModelAndView modelAndView = new ModelAndView();
+        modelAndView.addObject("test", "index");
         System.out.println(userService.insertUser());
-        return "index";
+        modelAndView.setViewName("index");
+        return modelAndView;
     }
 
 }

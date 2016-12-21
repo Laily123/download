@@ -1,0 +1,121 @@
+.container{
+  margin:auto;
+  width: 90%;
+  background-color: #eee;
+}
+@mixin defaultBorder{
+  border: solid 2px #ddd;
+}
+
+.admin-area{
+  .admin-nav{
+    display: inline-block;
+    width: 20%;
+    .administrator{
+      background-color: #b3a5b4;
+      height: 100px;
+      padding: 27px 38px;
+      border-bottom: solid 2px transparent;
+      .portrait{
+        display: inline-block;
+          img{
+              height: 55px;
+              width: 55px;
+              border-radius: 28px;
+          }
+      }
+      .name{
+        display: inline-block;
+        vertical-align: top;
+        height: 55px;
+        margin-left: 15px;
+        font-weight: bold;
+        color: #fff;
+        .welcome{
+          color: #8D8E98;
+        }
+        div {
+          height: 27px;
+          line-height: 2.1;
+        }
+      }
+    }
+    .admin-list{
+      background-color: #4c5457;
+      margin: 0;
+      font-size: 16px;
+      padding: 0;
+      height: 600px;
+      ul{
+        padding: 0;
+        li {
+          padding-left: 4em;
+        }
+      }
+      li{
+        padding-left:2em;;
+        list-style: none;
+        height: 40px;
+        line-height: 2.6;
+        color: #8D8E98;
+        cursor: pointer;
+      }
+      li:hover{
+        color: #fff;
+        background-color: #000;
+      }
+    }
+  }
+  .admin-content{
+    display: inline-block;
+    vertical-align: top;
+    width: 79%;
+    margin-left: -4px;
+      .content-title{
+        height: 100px;
+        padding: 20px 30px;
+        line-height: 2.6;
+        font-size: 25px;
+        background-color: #fff;
+        border-bottom: solid 2px transparent;
+        i{
+          color: #ddd;
+          margin-right: 30px;
+        }
+      }
+    .admin-content-area{
+      padding:15px 0 0 15px;
+      height: 600px;
+    }
+  }
+}
+
+.software-list{
+  .index{
+    padding: 15px;
+    width: 100%;
+    display: inline-block;
+    background-color: #fff;
+    border: solid 1px transparent;
+    height: 100%;
+    .software-item{
+      height: 30px;
+      padding: 0 15px;
+      line-height: 2;
+    }
+    .search{
+      width: 300px;
+    }
+  }
+}
+
+.new-software{
+  padding: 15px;
+  width: 100%;
+  eight: 100%;
+  background-color: #fff;
+  border: solid 1px transparent;
+  .form-field{
+    width: 50%;
+  }
+}
