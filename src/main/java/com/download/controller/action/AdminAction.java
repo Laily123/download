@@ -50,6 +50,7 @@ public class AdminAction {
         String metaDesc = request.getParameter("meta_desc");
         String desc = request.getParameter("description");
         softwareService.validatorForAdmin(name, commonName, ident, url, companyName, remark, keyWords, metaDesc, desc);
+
         return JsonData.simpleSuccessJsonReturnDate();
     }
 

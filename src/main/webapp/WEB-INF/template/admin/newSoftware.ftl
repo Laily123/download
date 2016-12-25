@@ -1,5 +1,5 @@
 <#import "../layout/adminLayout.ftl" as u>
-<@u.adminPage title="wtf" contentTitle="新增软件">
+<@u.adminPage title="新增软件" contentTitle="新增软件">
 <div class="new-software">
     <form class="ui form" id="create">
         <div class="field form-field">

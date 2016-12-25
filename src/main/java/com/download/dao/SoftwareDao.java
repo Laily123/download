@@ -5,6 +5,8 @@ import org.springframework.cache.annotation.CacheEvict;
 import org.springframework.cache.annotation.Cacheable;
 import org.springframework.stereotype.Repository;
 
+import java.util.List;
+
 /**
  * Created by Laily on 16/6/2.
  */
@@ -17,4 +19,7 @@ public interface SoftwareDao {
 
     @CacheEvict(value = "Software", allEntries = true)
     long save(Software software);
+
+    @Cacheable(value = "Software", key = "#root.methodName+'_'")
+    List<Software> listAllSoftware();
 }

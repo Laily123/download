@@ -6,7 +6,7 @@
             <div class="ui input">
                 <input class="search" type="text" placeholder="搜索...">
             </div>
-            <a href="/admin/newSoftware"><div class="ui right floated button teal">新增软件</div></a>
+            <a href="/admin/new_software"><div class="ui right floated button teal">新增软件</div></a>
         </div>
         <hr/>
         <table class="ui celled striped table">
@@ -17,16 +17,18 @@
                 <th>编辑</th>
             </thead>
             <tbody>
+                <#list softwares as s>
                 <tr>
-                    <td>1</td>
-                    <td>Google Chrome</td>
-                    <td>Google</td>
+                    <td>${s.id}</td>
+                    <td>${s.name!}</td>
+                    <td>${s.company_name!}</td>
                     <td>
-                        <#--<a href="">审核</a>&nbsp;&nbsp;-->
-                        <a href="/admin/software_edit/google">编辑</a>&nbsp;&nbsp;
+                    <#--<a href="">审核</a>&nbsp;&nbsp;-->
+                        <a href="/admin/software_edit/${s.ident!}">编辑</a>&nbsp;&nbsp;
                         <a href="">删除</a>&nbsp;&nbsp;
                     </td>
                 </tr>
+                </#list>
             </tbody>
         </table>
     </div>

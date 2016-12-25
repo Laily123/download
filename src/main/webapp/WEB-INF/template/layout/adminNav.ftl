@@ -12,7 +12,7 @@
         <li>软件管理</li>
             <ul>
                 <a href="/admin/index"><li>软件列表</li></a>
-                <a href="/admin/newSoftware"><li>新增软件</li></a>
+                <a href="/admin/new_software"><li>新增软件</li></a>
                 <li>编辑软件</li>
             </ul>
         <li>版本管理</li>

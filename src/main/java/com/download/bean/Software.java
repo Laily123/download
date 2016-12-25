@@ -29,7 +29,7 @@ public class Software implements Serializable{
 
     private Long user_id;//提交软件的用户
 
-    private Long deleted_status;//
+    private Long is_deleted;//
 
     private String ident;//软件唯一ident
 
@@ -126,14 +126,6 @@ public class Software implements Serializable{
         this.user_id = user_id;
     }
 
-    public Long getDeleted_status() {
-        return deleted_status;
-    }
-
-    public void setDeleted_status(Long deleted_status) {
-        this.deleted_status = deleted_status;
-    }
-
     public String getIdent() {
         return ident;
     }
@@ -156,5 +148,13 @@ public class Software implements Serializable{
 
     public void setMeta_desc(String meta_desc) {
         this.meta_desc = meta_desc;
+    }
+
+    public Long getIs_deleted() {
+        return is_deleted;
+    }
+
+    public void setIs_deleted(Long is_deleted) {
+        this.is_deleted = is_deleted;
     }
 }

@@ -3,16 +3,16 @@
 <div class="new-software">
     <form class="ui form" id="create">
         <div class="field form-field">
-            <input type="text" id="name" placeholder="软件名称" value="$software.name">
+            <input type="text" id="name" placeholder="软件名称" value="${software.name!}">
+        </div>
+        <div class="field form-field">
+            <input type="text" id="ident" placeholder="软件唯一ident" value="${software.ident}">
+        </div>
+        <div class="field form-field">
+            <input type="text" id="url" placeholder="官网URL" value="${software.url}">
         </div>
         <div class="field form-field">
             <input type="text" id="common-name" placeholder="软件别名">
-        </div>
-        <div class="field form-field">
-            <input type="text" id="ident" placeholder="软件唯一ident">
-        </div>
-        <div class="field form-field">
-            <input type="text" id="url" placeholder="官网URL">
         </div>
         <div class="field form-field">
             <input type="text" id="company-name" placeholder="公司名称">

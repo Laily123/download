@@ -35,4 +35,8 @@
         INSERT INTO soft_software (name,common_name,url,company_name,description,remark,create_time,update_time,default_version_id,user_id,deleted_status)
                 VALUES (#{name},#{common_name},#{url},#{company_name},#{description},#{remark},#{create_time},#{update_time},#{default_version_id},#{user_id},#{deleted_status})
     </insert>
+
+    <select id="listAllSoftware" resultType="com.download.bean.Software">
+        SELECT * FROM soft_software WHERE is_deleted = 0
+    </select>
 </mapper>

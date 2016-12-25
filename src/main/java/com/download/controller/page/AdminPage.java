@@ -11,6 +11,8 @@ import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.servlet.ModelAndView;
 
+import java.util.List;
+
 /**
  * 管理员页面路由
  * <p>
@@ -44,8 +46,10 @@ public class AdminPage {
      * @return ModelAndView
      */
     @RequestMapping("index")
-    public ModelAndView admin() {
+    public ModelAndView admin(ModelMap map) {
         ModelAndView modelAndView = new ModelAndView();
+        List<Software> list = softwareService.listAllSoftware();
+        modelAndView.addObject("softwares",list);
         modelAndView.setViewName("admin/index");
         return modelAndView;
     }
@@ -55,7 +59,7 @@ public class AdminPage {
      *
      * @return ModelAndView
      */
-    @RequestMapping("newSoftware")
+    @RequestMapping("new_software")
     public ModelAndView newSoftware() {
         ModelAndView modelAndView = new ModelAndView();
         modelAndView.setViewName("admin/newSoftware");
