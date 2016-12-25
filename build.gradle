@@ -7,7 +7,7 @@ apply plugin: 'war'
 sourceCompatibility = 1.8
 
 repositories {
-    mavenCentral()
+    maven { url 'http://maven.aliyun.com/mvn/repository/' }
 }
 
 dependencies {

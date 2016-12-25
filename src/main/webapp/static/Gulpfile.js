@@ -18,7 +18,7 @@ gulp.task('lint', function() {
 
 //编译Sass
 gulp.task('sass', function() {
-    gulp.src('./scss/*.scss')
+    gulp.src('./scss/**/*.scss')
         .pipe(sass())
         .pipe(gulp.dest('dist/css'))
 });
@@ -47,12 +47,11 @@ gulp.task('min', function() {
 //监听
 gulp.task("watchscss",function(){
     //监听文件变化
-    gulp.watch('./scss/admin/*.scss', function(){
-        gulp.run('admincss');
-    });
+    var res = ["admincss"];
+    gulp.watch('./scss/admin/*.scss',res);
 });
 
 // 默认任务
 gulp.task('default', function(){
-    gulp.run('lint', 'scripts');
+    gulp.start('lint', 'sass');
 });

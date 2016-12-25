@@ -2,6 +2,7 @@ package com.download.bean;
 
 import com.download.service.UserService;
 import org.junit.Test;
+import org.springframework.beans.BeansException;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 
@@ -11,7 +12,7 @@ import org.springframework.context.support.ClassPathXmlApplicationContext;
 public class TestUser {
 
     @Test
-    public void testFuck(){
+    public void testFuck() throws BeansException {
         ApplicationContext ctx;
         ctx = new ClassPathXmlApplicationContext("spring-mvc.xml");
         UserService userService=(UserService)ctx.getBean("userService");
