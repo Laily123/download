@@ -1,0 +1,43 @@
+.software-main .soft-banner {
+  padding: 20px 0;
+  background-color: #eee;
+  width: 100%; }
+  .software-main .soft-banner .soft-title {
+    text-align: center;
+    margin-top: 60px; }
+    .software-main .soft-banner .soft-title .main-title {
+      font-size: 28px;
+      font-weight: bold; }
+  .software-main .soft-banner .menu {
+    margin-top: 20px;
+    text-align: center; }
+    .software-main .soft-banner .menu a {
+      display: inline-block;
+      border: solid 1px white;
+      border-radius: 13px;
+      height: 30px;
+      line-height: 1.8;
+      width: 95px;
+      color: white; }
+      .software-main .soft-banner .menu a span {
+        display: inline-block;
+        font-size: 16px; }
+        .software-main .soft-banner .menu a span i {
+          margin-right: 3px; }
+    .software-main .soft-banner .menu .home {
+      background-color: #19C2FF; }
+    .software-main .soft-banner .menu .download {
+      background-color: #29B996;
+      margin-left: 10px; }
+    .software-main .soft-banner .menu .github {
+      background-color: black;
+      margin-left: 10px; }
+  .software-main .soft-banner .link-info {
+    text-align: center;
+    margin-top: 20px; }
+    .software-main .soft-banner .link-info div {
+      display: inline-block;
+      width: 180px; }
+
+.software-main .soft-intro {
+  border: solid 1px #eee; }

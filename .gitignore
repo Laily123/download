@@ -6,6 +6,4 @@
 *.properties
 **/.min.css
 **/.min.js
-**/static/dist/css/
-**/static/dist/js/
 *.iml

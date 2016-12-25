@@ -1,0 +1,13 @@
+.add-new-software {
+  text-align: center;
+  margin-top: 20px; }
+  .add-new-software .input-for-url {
+    width: 450px;
+    height: 40px; }
+  .add-new-software .more-info {
+    width: 450px;
+    margin: 15px auto;
+    text-align: right;
+    padding-right: 2px; }
+  .add-new-software .more-info-content {
+    text-align: left; }

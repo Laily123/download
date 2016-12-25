@@ -1,0 +1,93 @@
+.container {
+  margin: auto;
+  width: 90%;
+  background-color: #eee; }
+
+.admin-area .admin-nav {
+  display: inline-block;
+  width: 20%; }
+  .admin-area .admin-nav .administrator {
+    background-color: #b3a5b4;
+    height: 100px;
+    padding: 27px 38px;
+    border-bottom: solid 2px transparent; }
+    .admin-area .admin-nav .administrator .portrait {
+      display: inline-block; }
+      .admin-area .admin-nav .administrator .portrait img {
+        height: 55px;
+        width: 55px;
+        border-radius: 28px; }
+    .admin-area .admin-nav .administrator .name {
+      display: inline-block;
+      vertical-align: top;
+      height: 55px;
+      margin-left: 15px;
+      font-weight: bold;
+      color: #fff; }
+      .admin-area .admin-nav .administrator .name .welcome {
+        color: #8D8E98; }
+      .admin-area .admin-nav .administrator .name div {
+        height: 27px;
+        line-height: 2.1; }
+  .admin-area .admin-nav .admin-list {
+    background-color: #4c5457;
+    margin: 0;
+    font-size: 16px;
+    padding: 0;
+    height: 600px; }
+    .admin-area .admin-nav .admin-list ul {
+      padding: 0; }
+      .admin-area .admin-nav .admin-list ul li {
+        padding-left: 4em; }
+    .admin-area .admin-nav .admin-list li {
+      padding-left: 2em;
+      list-style: none;
+      height: 40px;
+      line-height: 2.6;
+      color: #8D8E98;
+      cursor: pointer; }
+    .admin-area .admin-nav .admin-list li:hover {
+      color: #fff;
+      background-color: #000; }
+
+.admin-area .admin-content {
+  display: inline-block;
+  vertical-align: top;
+  width: 79%;
+  margin-left: -4px; }
+  .admin-area .admin-content .content-title {
+    height: 100px;
+    padding: 20px 30px;
+    line-height: 2.6;
+    font-size: 25px;
+    background-color: #fff;
+    border-bottom: solid 2px transparent; }
+    .admin-area .admin-content .content-title i {
+      color: #ddd;
+      margin-right: 30px; }
+  .admin-area .admin-content .admin-content-area {
+    padding: 15px 0 0 15px;
+    height: 600px; }
+
+.software-list .index {
+  padding: 15px;
+  width: 100%;
+  display: inline-block;
+  background-color: #fff;
+  border: solid 1px transparent;
+  height: 100%; }
+  .software-list .index .software-item {
+    height: 30px;
+    padding: 0 15px;
+    line-height: 2; }
+  .software-list .index .search {
+    width: 300px; }
+
+.new-software {
+  padding: 15px;
+  width: 100%;
+  eight: 100%;
+  background-color: #fff;
+  border: solid 1px transparent; }
+  .new-software .form-field {
+    width: 50%; }
